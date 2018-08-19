@@ -1,0 +1,18 @@
+div {
+  width: 400px;
+  /* height: 100px; */
+  padding: 100px;
+  border: 40px solid black;
+  /* margin: 50px; */
+  float: left;
+}
+
+.item1 {
+  background-color: cadetblue;
+  box-sizing: border-box;
+}
+
+.item2 {
+  background-color: royalblue;
+  box-sizing: border-box;
+}

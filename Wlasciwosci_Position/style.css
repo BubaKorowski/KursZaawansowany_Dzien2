@@ -1,0 +1,61 @@
+body {
+    height: 300vh;
+}
+
+header {
+    overflow: hidden;
+    background-color: lightgreen;
+    /* z-index: -1; */
+}
+
+/* 
+p {
+    z-index: 1;
+} */
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    /* float: left; */
+    /* margin: 10px; */
+}
+
+section {
+    position: relative;
+    background-color: beige;
+    /* overflow: hidden; */
+    /* z-index: -1; */
+}
+
+.s1 {
+    position: fixed;
+    background-color: red;
+    left: 100px;
+    top: 50%;
+    /* z-index: -1; */
+}
+
+.s2 {
+    position: absolute;
+    background-color: blue;
+    bottom: 80%;
+    left: 80%;
+    /* z-index: 1; */
+}
+
+.s3 {
+    position: relative;
+    background-color: orange;
+    left: 300px;
+    top: -20px;
+    /* z-index: -1 */
+}
+
+.s4 {
+    top: 50px;
+    left: 50px;
+    z-index: 5;
+    background-color: gray;
+    /* position: absolute; */
+}
