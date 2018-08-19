@@ -1,0 +1,9 @@
+header {
+    height: 300px;
+    background-color: greenyellow;
+}
+
+main {
+    height: calc(100vh - 2*100px);
+    background-color: lightseagreen;
+}
