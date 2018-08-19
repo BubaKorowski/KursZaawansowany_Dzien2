@@ -12,3 +12,8 @@ header>* {
     width: 20vw;
     background-color: green;
 }
+
+nav {
+    width: calc(100% - 10% - 20vw);
+    background-color: black;
+}
