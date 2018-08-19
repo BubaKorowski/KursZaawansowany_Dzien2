@@ -1,0 +1,14 @@
+header>* {
+    float: left;
+    height: 50px;
+}
+
+.logo {
+    width: 10%;
+    background-color: red;
+}
+
+.search {
+    width: 20vw;
+    background-color: green;
+}
