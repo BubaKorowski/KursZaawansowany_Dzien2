@@ -1,0 +1,26 @@
+/* tak tworzy się zmienne w CSS. Do wykożystania we współpracy z JS. Najczęściej używane w dużych projektach */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --divNumber: 3;
+    --divHeight: calc(100vh/var(--divNumber));
+    --oddBgc: blue;
+    --evenBgc: red;
+    --fontSizeDiv: 30px;
+    --width1: 100px;
+    --width2: 200px;
+}
+
+div {
+    /* height: var(--divHeight); */
+    height: calc(var(--width1) + var(--width2));
+    background-color: var(--oddBgc);
+}
+
+div:nth-child(even) {
+    background-color: var(--evenBgc);
+}
