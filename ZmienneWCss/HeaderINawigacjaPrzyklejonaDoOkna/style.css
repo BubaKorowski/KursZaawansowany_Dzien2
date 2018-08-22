@@ -3,30 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --navHeight: 10vh;
+    --headerHeight:90vh;
+}
 
 html {
     text-align: center;
-    color: red;
+    color: white;
     font-size: 30px;
     text-transform: uppercase;
     font-family: arial;
 }
 
 nav {
-    height: 10vh;
+    /* height: 10vh; */
+    height: var(--navHeight);
     background-color: black;
     line-height: 10vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header {
-    height: 90vh;
+    /* height: 90vh; */
+    height: var(--headerHeight);
     background-color: brown;
     line-height: 90vh;
+    top: 10vh;
+    left: 0;
+    z-index: -1;
 }
 main {
+    position: relative;
+    /* margin-top: 100vh; */
+    margin-top: calc(var(--navHeight) + var(--headerHeight));
     height: 200vh;
     line-height: 200vh;
     background-color: lightgreen;
-    background-image: linear-gradient(45deg, green 0%, red 50%, violet 80%)
-)
+    background-image: linear-gradient(45deg, green 10%, white 40%, violet 80%);
+}
+
+nav, header {
+    position: fixed;
+    width: 100%;
 }
