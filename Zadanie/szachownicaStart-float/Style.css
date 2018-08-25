@@ -1,0 +1,32 @@
+/* .clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+} */
+
+h1 {
+    position: static;
+    text-align: center;
+    margin-top: 10vh;
+    font-family: sans-serif;
+}
+
+.board {
+    margin: 0 auto;
+    overflow: hidden;
+    position: static;
+    width: 30vw;
+    border: solid black 10px;
+}
+
+span {
+    position: static;
+    float: left;
+    height: 15vw;
+    width: 50%;
+}
+
+span:nth-child(1),
+span:nth-child(4) {
+    background-color: red;
+}

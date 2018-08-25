@@ -1,0 +1,25 @@
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+h1 {
+    /* position: static; */
+    text-align: center;
+    margin-top: 85vh;
+    font-family: sans-serif;
+}
+
+.board {
+    /* position: absolute; */
+    /* width: 30vw;
+    border: solid black 10px;
+    top: calc(50% - 30vw/2 - 10px);
+    left: calc(50% - 30vw/2 - 10px);
+    background-color: red; */
+}
+
+span {
+    height: 30vw;
+}

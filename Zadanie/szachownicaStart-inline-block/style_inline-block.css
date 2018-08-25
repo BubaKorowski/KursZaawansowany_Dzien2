@@ -1,0 +1,31 @@
+/* wykorzystująć inline-block dla każdego pola */
+
+h1 {
+    text-align: center;
+    margin-top: 85vh;
+    font-family: sans-serif;
+}
+
+.board {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border: solid black 10px;
+    top: calc(50% - 30vw/2 - 10px);
+    left: calc(50% - 30vw/2 - 10px);
+    font-size: 0;
+}
+
+span {
+    display: inline-block;
+    height: 15vw;
+    width: 15vw;
+}
+
+span:nth-child(2) {
+    background-color: red;
+}
+
+span:nth-child(3) {
+    background-color: red;
+}
