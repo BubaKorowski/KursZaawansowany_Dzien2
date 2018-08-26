@@ -4,28 +4,15 @@
     box-sizing: border-box;
 }
 
-/* body {
-    position: relative;
-} */
-
 div .picture {
-    position: relative;
+    position: absolute;
+    width: 100vw;   
 }
 
 div img {
+    /* left: 50%;
+    top: 50%; */
+    /* transform: translate(-50%, -50%); */
     position: absolute;
     width: 80vw;
-}
-
-div img:nth-child(10) {
-    width: 20vw;
-    right: 0;
-}
-
-div img:nth-child(7) {
-    width: 10vw;
-}
-
-div img:last-child {
-    width: 5vw;
 }
