@@ -1,55 +1,107 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* p {
-    display: block;
-    width: 100vw;
-    height: 100vh;
+/* p:nth-child(1) {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
 } */
+p {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  /* opacity: 0; */
+}
+
+div.bg {
+  transition: 1s;
+  /* display: block; */
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+}
 
 div.red {
-    cursor: pointer;
-    position: absolute;
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 5px solid black;
+  cursor: pointer;
+  position: absolute;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid black;
 }
 
-div.red:hover~div.bg {
-    background-color: red;
+div.red:hover ~ div.bg {
+  background-color: red;
 }
 
 div.green {
-    cursor: pointer;
-    position: absolute;
-    background-color: green;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 5px solid black;
-    right: 0;
+  cursor: pointer;
+  position: absolute;
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid black;
+  right: 0;
 }
 
-div.green:hover~div.bg {
-    background-color: green;
+div.green:hover ~ div.bg {
+  background-color: green;
 }
 
 div.blue {
-    cursor: pointer;
-    position: absolute;
-    background-color: blue;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 5px solid black;
-    bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid black;
+  bottom: 0;
 }
 
-div.blue:hover~div.bg {
-    background-color: blue;
+div.blue:hover ~ div.bg {
+  background-color: blue;
 }
+
+div.orange.circle {
+  cursor: pointer;
+  position: absolute;
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid black;
+  bottom: 0;
+  right: 0;
+}
+div p.orange {
+  opacity: 0;
+}
+
+div.orange:hover ~ div.bg {
+  background-color: orange;
+}
+
+/* p.red {
+  opacity: 0;
+}
+div.red:hover ~ p.red {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+} */
