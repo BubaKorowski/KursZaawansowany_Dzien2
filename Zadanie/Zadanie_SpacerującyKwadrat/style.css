@@ -1,0 +1,37 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} */
+
+.square {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    left: 0;
+    top: 0;
+    transition: 2s;
+}
+
+button:hover ~ div.square {
+    /* transition: all ease 2s; */
+    top:calc(100% - 100px);
+    left: calc(100% - 100px);
+    height: 100px;
+    width: 100px;
+}
+
+button {
+    margin: 20px auto;
+    display: block;
+    padding: 20px 50px;
+    font-size: 20px;
+    border: solid black 2px;
+    transition: .4s;
+    
+}
+button:hover {
+    background-color: orange;
+
+}

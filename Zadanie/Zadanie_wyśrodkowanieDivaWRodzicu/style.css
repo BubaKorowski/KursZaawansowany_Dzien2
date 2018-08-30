@@ -1,0 +1,20 @@
+header {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px 20px 50px 20px;
+    border: 3px solid gray;
+    /* overflow: hidden; */
+    box-sizing: content-box;
+}
+
+div {
+    position: absolute;
+    padding: 20px;
+    width: 30%;
+    background-color: gray;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%)
+}
