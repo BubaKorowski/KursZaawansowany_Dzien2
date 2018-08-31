@@ -1,0 +1,72 @@
+/* build divs relatie to absolute body */
+/* body {
+    position: relative;
+} */
+span{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: brown;
+    padding: 10px 20px;
+    font-family: arial;
+    cursor: pointer;
+}
+div {
+    position: absolute;
+    top:90%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    background-color: brown;
+    transition: 1s;
+}
+span:hover ~ div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:50vh;
+    height: 30vh;
+}
+
+span:hover ~ div:nth-child(3) {
+    top: calc(50% - 15vh);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width:calc(50vh/1.41);
+    height: calc(50vh/1.41);
+    background-color: black;
+    z-index: -1;
+}
+span:hover ~ div:nth-child(4) {
+    top: calc(50% - 30vh);
+    left: calc(50% + 15vh);
+    width:8vh;
+    height: 20vh;
+background-color: black;
+}
+
+span:hover ~ div:nth-child(5) {
+    top: 50%;
+    left: calc(50% - 15vh);
+    width:10vh;
+    height: 10vh;
+    background-color: orange;
+    z-index: 1;
+}
+
+span:hover ~ div:nth-child(6) {
+    top: 50%;
+    left: calc(50% + 15vh);
+    width:10vh;
+    height: 10vh;
+    background-color: orange;
+    z-index: 1;
+}
+span:hover ~ div:nth-child(7) {
+    top: calc(50% + 5vh);
+    left: 50%;
+    width:10vh;
+    height: 20vh;
+    background-color: gray;
+    /* z-index: 1; */
+}
