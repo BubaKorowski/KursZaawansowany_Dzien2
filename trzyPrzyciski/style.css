@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+button {
+  position: relative;
+  padding: 10px 20px;
+  margin: 100px;
+  font-size: 40px;
+  background-color: gray;
+  overflow: hidden;
+  border: 2px black solid;
+  transition: 0.5s;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  transition: 0.3s;
+}
+button:hover::after {
+  right: 10%;
+}
+
+button:hover {
+  background-color: white;
+}
