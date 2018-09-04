@@ -1,3 +1,7 @@
+:root {
+  --fontSize: 20px;
+}
+
 button {
   display: block;
   margin: 20px auto;
@@ -8,22 +12,23 @@ html {
   /* font-size: 20px; */
 }
 h1 {
-  font-size: 20px;
+  position: absolute;
+  font-size: var(--fontSize);
   text-align: center;
-  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: 0.4s;
 }
 
 button.large:hover ~ h1 {
-  font-size: 40px;
+  font-size: calc(var(--fontSize) * 2);
+  color: red;
 }
 button.small:hover ~ h1 {
-  font-size: 10px;
+  font-size: calc(var(--fontSize) / 2);
 }
 
 button.order:hover ~ h1 {
-  display: block;
-  margin: 50px auto;
-  border: 2px solid red;
-  width: 200px;
-  padding: 20px 40px;
+  border: 10px solid black;
+}
