@@ -1,0 +1,29 @@
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 40px;
+  border: 2px solid black;
+}
+html {
+  /* font-size: 20px; */
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  transition: 0.4s;
+}
+
+button.large:hover ~ h1 {
+  font-size: 40px;
+}
+button.small:hover ~ h1 {
+  font-size: 10px;
+}
+
+button.order:hover ~ h1 {
+  display: block;
+  margin: 50px auto;
+  border: 2px solid red;
+  width: 200px;
+  padding: 20px 40px;
