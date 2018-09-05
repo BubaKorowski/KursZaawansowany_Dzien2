@@ -21,10 +21,10 @@ h1 {
   transition: 0.4s;
 }
 
-button.large:hover ~ h1 {
+/* button.large:hover ~ h1 {
   font-size: calc(var(--fontSize) * 2);
   color: red;
-}
+} */
 button.small:hover ~ h1 {
   font-size: calc(var(--fontSize) / 2);
 }
