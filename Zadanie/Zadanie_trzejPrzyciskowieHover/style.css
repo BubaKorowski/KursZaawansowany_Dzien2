@@ -20,15 +20,26 @@ h1 {
   transform: translate(-50%, -50%);
   transition: 0.4s;
 }
+h1.duzy {
+  font-size: 90px;
+}
+h1.maly {
+  font-size: 10px;
+}
+
+h1.border {
+  border: 10px solid black;
+}
 
 /* button.large:hover ~ h1 {
   font-size: calc(var(--fontSize) * 2);
   color: red;
 } */
-button.small:hover ~ h1 {
-  font-size: calc(var(--fontSize) / 2);
-}
 
-button.order:hover ~ h1 {
+/* button.small:hover ~ h1 {
+  font-size: calc(var(--fontSize) / 2);
+} */
+
+/* button.order:hover ~ h1 {
   border: 10px solid black;
-}
+} */
