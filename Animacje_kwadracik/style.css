@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin-left: 200px;
+  /* animation-fill-mode: forwards; */
+  animation: move 10s 2s 2 linear alternate both;
+  /* animation-name: move;
+  animation-duration: 5s;
+  animation-duration: alternate;
+  animation-iteration-count: 6;
+  animation-timing-function: linear; */
+  /* animation-delay: 5s; */
+}
+
+@keyframes move {
+  0% {
+    margin-left: 0;
+    background-color: blue;
+  }
+  50% {
+  }
+  100% {
+    margin-left: calc(100% - 200px);
+    background-color: blue;
+  }
+}
+button {
+  position: absolute;
+  left: 20px;
+  top: 300px;
+  width: 200px;
+  height: 100px;
+  font-size: 40px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+button:hover {
+  background-color: coral;
+}
+button:hover ~ div {
+  animation-play-state: paused;
+}
+
+/* @keyframes color {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: darkblue;
+  }
+  50% {
+    background-color: darkkhaki;
+  }
+  70% {
+    background-color: orange;
+  }
+  100% {
+    background-color: black;
+  }
+} */
