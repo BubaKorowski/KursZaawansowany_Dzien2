@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  position: absolute;
+  bottom: 15vw;
+  right: 15vw;
+  border: 2px solid black;
+  width: 360px;
+  height: 100px;
+  background-color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: roboto condensed, sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+button span {
+  display: block;
+  line-height: 100px;
+  position: relative;
+  left: 0;
+  transition: 0.4s;
+}
+button span:nth-child(2) {
+  left: 100%;
+  top: -100px;
+}
+button:hover span:nth-child(2) {
+  left: 0;
+}
+
+button:hover span {
+  left: -100%;
+}

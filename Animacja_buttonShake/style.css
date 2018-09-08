@@ -1,0 +1,51 @@
+button {
+  position: absolute;
+  bottom: 15vw;
+  right: 15vw;
+  border: 2px solid black;
+  padding: 20px 40px;
+  background-color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: roboto condensed, sans-serif;
+  animation: shaker 5s ease infinite;
+  cursor: pointer;
+}
+@keyframes shaker {
+  0% {
+    transform: translate(0);
+  }
+  90% {
+    transform: translate(0);
+  }
+  91% {
+    transform: translate(0);
+  }
+  92% {
+    transform: translate(0);
+  }
+  93% {
+    transform: translate(20px);
+  }
+  94% {
+    transform: translate(-20px);
+  }
+  95% {
+    transform: translate(20px);
+  }
+  96% {
+    transform: translate(-20px);
+  }
+  97% {
+    transform: translate(20px);
+  }
+  98% {
+    transform: translate(-20px);
+  }
+  99% {
+    transform: translate(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
