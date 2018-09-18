@@ -1,0 +1,36 @@
+.bell {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 7px solid orange;
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  line-height: 80px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.bell i {
+  animation: ring 0.2s linear infinite alternate;
+  transform-origin: 50% 0;
+  transition: 0.2s;
+}
+.bell:hover i {
+  color: yellow;
+  /* animation-play-state: paused; */
+  animation: none;
+}
+.bell:hover {
+  background-color: darkorange;
+}
+@keyframes ring {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}

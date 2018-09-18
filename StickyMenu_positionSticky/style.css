@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 400px;
+  background-color: #000;
+}
+a {
+  float: left;
+  width: 25%;
+  line-height: 60px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  background-color: gray;
+}
+p {
+  line-height: 200%;
+  font-size: 20px;
+}
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+div {
+  position: absolute;
+}
+.left {
+  top: 0;
+  left: 0;
+  border-left: 100px solid gray;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+.right {
+  top: 0;
+  right: 0;
+  border-right: 100px solid gray;
+  border-top: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+.bottom {
+  bottom: 0;
+  left: 0;
+  border-bottom: 400px solid red;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+}
