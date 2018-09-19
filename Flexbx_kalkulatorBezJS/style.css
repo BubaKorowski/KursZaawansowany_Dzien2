@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 5px solid black;
+  box-sizing: border-box;
+  padding: 100px;
+}
+
+.result {
+  flex-basis: 10%;
+  background-color: #ddd;
+}
+
+.panel {
+  flex-grow: 1;
+  background-color: lightblue;
+}
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 25.0001%;
+  flex-grow: 1;
+  border: 3px solid red;
+  font-size: 40px;
+  font-family: arial;
+}
