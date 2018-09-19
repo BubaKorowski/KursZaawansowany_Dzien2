@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            background-color: #ddd;
+            height: 400px;
+            width: 80%;
+            margin: 100px auto;
+            font-family: sans-serif;
+            color: white;
+            font-size: 80px;
+            align-items: stretch;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            /* stretch jest prostopadły do osi glównej */
+            flex-direction: column;
+            text-align: center;
+            /* flex-direction określa położenie osi row-X(row jest wartością domyślną) column-Y */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+        }
+
+        div {
+            flex-basis: 350px;
+        }
+
+        .f1 {
+            background-color: red;
+            /* width: auto; */
+            /* height: auto; */
+            /* text-align: center; */
+            /* flex-basis: 300px; */
+            /* flex-basis jest wartością na glownej osi determinowanej przez flex-direction */
+        }
+
+        .f2 {
+            background-color: green;
+        }
+
+        .f3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="f1">1</div>
+        <div class="f2">2</div>
+        <div class="f3">3</div>
+    </section>
+</body>
+
+</html>

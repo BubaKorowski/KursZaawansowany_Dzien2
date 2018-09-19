@@ -18,12 +18,34 @@
             height: 100px;
             width: 100px;
             border-radius: 50%;
-            border: 6px solid black;
+            border: none;
+            background-color: red;
+            overflow: hidden;
         }
 
         .arrow .fas {
+            color: white;
+            /* position: absolute; */
             font-size: 50px;
-            box-shadow: 0px 18px 5px 0px black;
+            text-shadow: 0 20px 0 white, 0 -20px 0 white;
+            /* top: -50%;
+            transform: translate(-50%, -50%); */
+            transform: translateY(-95px);
+            animation: arrow 2s 1s linear infinite;
+        }
+
+        @keyframes arrow {
+            0% {
+                /* top: -50%;
+                transform: translate(-50%, -50%) */
+                transform: translateY(-95px)
+            }
+
+            100% {
+                /* top: 150%;
+                transform: translate(-50%, -50%) */
+                transform: translateY(95px)
+            }
         }
     </style>
 </head>
