@@ -13,16 +13,16 @@ body {
 }
 
 .result {
-  flex-basis: 10%;
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
   background-color: #ddd;
 }
 
 .panel {
+  display: flex;
   flex-grow: 1;
   background-color: lightblue;
-}
-.panel {
-  display: flex;
   flex-wrap: wrap;
 }
 
