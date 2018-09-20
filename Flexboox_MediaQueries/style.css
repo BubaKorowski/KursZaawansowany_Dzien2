@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  background-color: rgb(221, 221, 221);
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(img/Starwars.jpg);
+  background-size: cover;
+  background-position: center;
+}
+div {
+  flex-basis: 25%;
+  background-color: rgba(255, 0, 0, 0.699);
+}
+@media (min-width: 640px) {
+  body {
+    background-color: rgba(128, 128, 128, 0.452);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: greenyellow;
+  }
+}
+@media (orientation: landscape) {
+  body {
+    flex-direction: column;
+  }
+}
+@media (orientation: landscape) and (min-height: 200px) {
+  div {
+    background-color: rgba(255, 255, 255, 0.418);
+  }
+}
