@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   text-transform: uppercase;
@@ -15,6 +16,7 @@ body {
   font-size: 30px;
   align-items: center;
 }
+
 nav {
   background-color: black;
   align-self: stretch;
@@ -22,12 +24,14 @@ nav {
   flex-basis: 10vh;
   /* text-align: center; */
 }
+
 header {
   width: 100%;
   max-width: 960px;
   background-color: royalblue;
   flex-basis: 25vh;
 }
+
 section {
   display: flex;
   flex-direction: row;
@@ -36,32 +40,39 @@ section {
   width: 100%;
   max-width: 960px;
 }
+
 footer {
   background-color: black;
   /* align-self: stretch; */
   width: 100%;
   flex-basis: 10vh;
 }
+
 main {
   background-color: gray;
   flex-grow: 1;
 }
+
 aside {
-  flex-basis: 30%;
-  min-width: 280px;
+  /* flex-basis: 30%; */
+  min-width: 380px;
 }
+
 @media (max-width: 960px) {
   header {
     order: -1;
   }
+
   section {
     flex-direction: column;
   }
+
   main {
-    flex-grow: 0;
+    flex-grow: 2;
   }
+
   aside {
     flex-grow: 1;
-    flex-basis: 50%;
+    /* flex-basis: auto; */
   }
 }
