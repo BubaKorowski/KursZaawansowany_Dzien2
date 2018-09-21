@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial, sans-serif;
+  min-height: 100vh;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  padding: 20px 0;
+}
+section {
+  display: flex;
+  max-width: 960px;
+  justify-content: space-evenly;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  background-color: orange;
+  align-items: stretch;
+  width: 25%;
+  padding: 10px;
+}
+
+.col > * {
+  padding-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+p.price {
+  flex-grow: 1;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+span {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  grid-area: baner;
+  background-color: red;
+}
+nav {
+  grid-area: nav;
+  background-color: green;
+}
+main {
+  grid-area: main;
+  background-color: royalblue;
+}
+aside {
+  grid-area: aside;
+
+  background-color: orange;
+}
+footer {
+  grid-area: footer;
+  background-color: blue;
+}
+body {
+  display: grid;
+  min-height: 200vh;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 150px 50px 1fr 50px;
+  grid-template-areas:
+    "baner baner"
+    "nav nav"
+    "main aside"
+    "footer footer";
+  color: white;
+  font-family: arial;
+  font-size: 30px;
+}
+@media (max-width: 960px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px 1fr 60px 50px;
+    grid-template-areas:
+      "baner"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+}
