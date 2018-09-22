@@ -2,3 +2,10 @@ button {
   font-size: 60px;
   background-color: orange;
 }
+body {
+  height: 300vh;
+}
+
+p {
+  position: fixed;
+}
