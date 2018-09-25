@@ -1,0 +1,17 @@
+body {
+  /* position: relative; */
+}
+.smaller {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+.bigger {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+p {
+  position: absolute;
+  top: 15%;
+}

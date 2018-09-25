@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- poniżej funkcja wykonuje się gdy jest wczytany cały DOM/  .ready -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script> -->
+
+    <!-- <script>
+        $(document).ready(function () {
+            console.log($('*'));
+            console.log($('.item1').text());
+
+           // lub skrócony zapis:
+
+            $(function () {
+                console.log($('*'));
+                console.log($('.item1').text());
+            })
+    </script> -->
+
+</head>
+
+<body>
+    <div class="item1">Div Item1</div>
+    <div class="item2">Div Item2</div>
+    <div>Div Item1</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum, commodi, dolore saepe voluptatem
+        odit dignissimos laudantium culpa maxime ducimus laboriosam, cum hic nam illum dolorem placeat odio natus!
+        Labore.</p>
+    <p>lorem, ipsum.</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        console.log($('*'));
+        console.log($('.item1').text()); //pobieranie textu z pobranego i umieszczonego w elemencie JQuery elementu.
+        console.log($('div').length);
+        const $p = $('p');
+        console.log($($p.html))
+    </script>
+</body>
+
+</html>

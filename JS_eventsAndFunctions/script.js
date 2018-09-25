@@ -12,12 +12,12 @@ btn.addEventListener("mouseover", function() {
 });
 
 btn.addEventListener("mousemove", function() {
-  console.log("najechanie myszką");
+  console.log("ruch myszką");
 });
 
-btn.addEventListener("click", function() {
-  alert("kliknąłeś");
-});
+// btn.addEventListener("click", function() {
+//   alert("kliknąłeś");
+// });
 
 // const paragraph = document.querySelector("p");
 // btn.addEventListener("click", function() {
@@ -33,6 +33,21 @@ btn.addEventListener("click", function() {
   clicksNumber += 2;
   console.log("klkik numer", clicksNumber);
 });
+
+// konkatenacja, czyli łączenie stringów. Poniższa funkcja jest 'anonimowa' ponieważ nie nadaliśmy jej nazwy.
+
 window.addEventListener("scroll", function() {
   console.log("skrollujesz o " + window.scrollY + "px");
+});
+
+// użycie zadeklarowanej funkcji
+
+// function showScrollSize() {
+//   console.log("skolujesz 0 " + window.scrollY + "px");
+// }
+// window.addEventListener("scroll", showScrollSize);
+const spanResult = document.querySelector("span");
+
+document.addEventListener("scroll", function() {
+  spanResult.textContent = window.scrollY;
 });

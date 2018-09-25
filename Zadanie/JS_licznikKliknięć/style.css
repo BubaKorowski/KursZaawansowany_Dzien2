@@ -1,0 +1,16 @@
+span {
+  font-weight: bold;
+}
+
+body {
+  line-height: 100vh;
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  /* cursor: pointer; */
+}
+
+button {
+  cursor: pointer;
+  font-size: 40px;
+}

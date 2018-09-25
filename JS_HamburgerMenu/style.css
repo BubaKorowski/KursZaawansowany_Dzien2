@@ -1,0 +1,48 @@
+.burger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  /* font-family: arial; */
+  /* border-radius: 50%; */
+  /* border: 3px solid black; */
+  /* height: 50px;
+  width: 50px; */
+  /* text-align: center; */
+  line-height: 50px;
+  transition: 0.4s;
+}
+
+/* .burger:hover {
+  cursor: pointer;
+  transform: rotate(405deg);
+} */
+aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  background-color: black;
+  transition: 0.5s;
+}
+/* .burger.active {
+  transform: rotate(405deg);
+} */
+/* .burger.active + aside {
+  left: 0;
+} */
+/* .burger:hover ~ aside {
+  left: 0;
+} */
+
+.fas {
+  display: none;
+}
+
+i.show {
+  display: block;
+}
+aside.show {
+  left: 0;
+}
