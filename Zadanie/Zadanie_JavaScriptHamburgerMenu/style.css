@@ -1,0 +1,31 @@
+body {
+  height: 200vh;
+}
+
+.wrap {
+  margin: 10px 70px;
+}
+.arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  font-size: 40px;
+  transition: 0.4s;
+}
+nav {
+  position: fixed;
+  background-color: black;
+  left: 0;
+  bottom: -120px;
+  height: 150px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.up {
+  bottom: 0;
+}
+div.up {
+  bottom: 170px;
+  transform: rotate(180deg);
+}

@@ -46,3 +46,10 @@ i.show {
 aside.show {
   left: 0;
 }
+.wraper {
+  margin: 10px 80px;
+  transition: 0.5s;
+}
+.wraper.show {
+  padding-left: 300px;
+}
