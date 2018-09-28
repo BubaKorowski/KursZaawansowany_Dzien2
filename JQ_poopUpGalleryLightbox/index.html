@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Galeria</title>
+    <link href="dist/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,16 +18,23 @@
         </div>
 
         <div class="images">
-            <a href="img/1.jpg "><img src="img/thumb1.jpg" alt="miniatura"></a>
-            <a href="img/2.jpg "><img src="img/thumb2.jpg" alt="miniatura"></a>
-            <a href="img/3.jpg "><img src="img/thumb3.jpg" alt="miniatura"></a>
-            <a href="img/4.jpg "><img src="img/thumb4.jpg" alt="miniatura"></a>
-            <a href="img/5.jpg "><img src="img/thumb5.jpg" alt="miniatura"></a>
-            <a href="img/6.jpg "><img src="img/thumb6.jpg" alt="miniatura"></a>
-            <a href="img/7.jpg "><img src="img/thumb7.jpg" alt="miniatura"></a>
-            <a href="img/8.jpg "><img src="img/thumb8.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/1.jpg "><img src="img/thumb1.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/2.jpg "><img src="img/thumb2.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/3.jpg "><img src="img/thumb3.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/4.jpg "><img src="img/thumb4.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/5.jpg "><img src="img/thumb5.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/6.jpg "><img src="img/thumb6.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/7.jpg "><img src="img/thumb7.jpg" alt="miniatura"></a>
+            <a data-lightbox="obrazek 1" href="img/8.jpg "><img src="img/thumb8.jpg" alt="miniatura"></a>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+            "albumLabel": "Obraz %1 z %2"
+        })
+    </script>
 </body>
 
 </html>
