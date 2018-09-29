@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: orange;
+  border: 2px sollid black;
+  padding: 100px;
+}
+div .panel {
+  position: absolute;
+  display: flex;
+  flex-basis: 80%;
+  background-color: gray;
+}

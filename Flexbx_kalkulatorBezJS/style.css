@@ -11,28 +11,34 @@ body {
   box-sizing: border-box;
   padding: 100px;
 }
-
-.result {
-  display: flex;
-  flex-basis: 100%;
-  flex-grow: 1;
-  background-color: #ddd;
-}
-
 .panel {
   display: flex;
-  flex-grow: 1;
+  /* width: 100vw; */
   background-color: lightblue;
   flex-wrap: wrap;
 }
 
-.panel div {
+.result {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-basis: 100%;
+  /* width: 100%; */
+
+  /* flex-grow: 1; */
+  background-color: #ddd;
+}
+
+.panel div {
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-basis: 25.0001%;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border: 3px solid red;
   font-size: 40px;
   font-family: arial;
+}
+.panel div:nth-last-child(1),
+.panel div:nth-last-child(2) {
+  flex-basis: 45%;
 }
