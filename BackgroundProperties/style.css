@@ -13,7 +13,7 @@ div {
     background-image: url(img/bg2.JPG);
     background-repeat: repeat;
     background-origin: padding-box;
-    background-clip: border-box;
+    background-clip: content-box;
     /* background-position: center; */
     background-size: 20px 20px;
     /* background-attachment: fixed; */

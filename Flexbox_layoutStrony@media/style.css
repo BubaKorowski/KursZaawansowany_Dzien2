@@ -9,7 +9,7 @@ body {
   text-transform: uppercase;
   font-family: sans-serif;
   min-height: 100vh;
-  background-color: #222;
+  background-color: #fff;
   /* max-width: 960px; */
   flex-direction: column;
   color: white;
@@ -68,19 +68,11 @@ aside {
   }
 
   main {
-<<<<<<< HEAD
     flex-grow: 1;
-=======
-    flex-grow: 2;
->>>>>>> 4a67f59b2f8280a5f88c6b3b6abdfd04113b0978
   }
 
   aside {
     flex-grow: 1;
-<<<<<<< HEAD
     flex-basis: auto;
-=======
-    /* flex-basis: auto; */
->>>>>>> 4a67f59b2f8280a5f88c6b3b6abdfd04113b0978
   }
 }

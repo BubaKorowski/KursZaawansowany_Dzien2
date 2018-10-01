@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
 }
+
 button {
   position: absolute;
   bottom: 15vw;
   right: 15vw;
   border: 2px solid black;
   width: 360px;
-  height: 100px;
+  height: 200px;
   background-color: #fff;
   font-size: 40px;
   text-transform: uppercase;
@@ -19,15 +20,19 @@ button {
 
 button span {
   display: block;
-  line-height: 100px;
+  line-height: 200px;
   position: relative;
   left: 0;
   transition: 0.4s;
 }
+
 button span:nth-child(2) {
   left: 100%;
-  top: -100px;
+  top: -200px;
+  /* line-height: 200px; */
+
 }
+
 button:hover span:nth-child(2) {
   left: 0;
 }

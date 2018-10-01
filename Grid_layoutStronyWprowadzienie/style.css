@@ -3,27 +3,6 @@
   padding: 0;
 }
 
-header {
-  grid-area: baner;
-  background-color: red;
-}
-nav {
-  grid-area: nav;
-  background-color: green;
-}
-main {
-  grid-area: main;
-  background-color: royalblue;
-}
-aside {
-  grid-area: aside;
-
-  background-color: orange;
-}
-footer {
-  grid-area: footer;
-  background-color: blue;
-}
 body {
   display: grid;
   min-height: 200vh;
@@ -38,6 +17,33 @@ body {
   font-family: arial;
   font-size: 30px;
 }
+
+header {
+  grid-area: baner;
+  background-color: red;
+}
+
+nav {
+  grid-area: nav;
+  background-color: green;
+}
+
+main {
+  grid-area: main;
+  background-color: royalblue;
+}
+
+aside {
+  grid-area: aside;
+
+  background-color: orange;
+}
+
+footer {
+  grid-area: footer;
+  background-color: blue;
+}
+
 @media (max-width: 960px) {
   body {
     grid-template-columns: 1fr;

@@ -1,6 +1,7 @@
 body {
   background-color: red;
 }
+
 p {
   position: absolute;
   font-size: 80px;
@@ -12,6 +13,7 @@ p {
 span {
   position: relative;
 }
+
 span::after {
   content: "";
   position: absolute;
@@ -20,7 +22,8 @@ span::after {
   top: 0;
   left: 0;
   background-color: white;
-  animation: dots 2s steps(3, start) infinite;
+  /* animation: dots 2s steps(3, start) infinite; */
+  animation: dots 2s steps(4, end) infinite;
   overflow: hidden;
 }
 
@@ -28,7 +31,8 @@ span::after {
   0% {
     left: 0;
   }
+
   100% {
-    left: 100%;
+    left: 130%;
   }
 }
