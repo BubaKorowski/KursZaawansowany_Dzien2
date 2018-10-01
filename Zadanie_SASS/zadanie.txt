@@ -12,7 +12,7 @@ Zadanie: Ostyluj menu którego struktura znajduje się w index.html
  =box-flex($parametr1, $paramtetr2)
     wlasciwosc: wartosc
     wlasciwosc: $parametr1
-    wlasciwosc: $parametr2 
+    wlasciwosc: $parametr2
 
 2. Napisz w pliku nav1.sass style za pomocą preprocesora sass w formacie sass. Wykorzystaj w nich domieszkę i zmienną, które stworzyłeś.
 

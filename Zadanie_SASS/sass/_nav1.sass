@@ -1,29 +1,24 @@
-body
+*
     margin: 0
     padding: 0
     nav
-        background-color: red
-        margin: 0 auto
         ul
-            // +box-flex(column, space-between)
-            display: flex
-            // flex-direction: row
-            // justify-content: space-around
-            align-items: center
-            // align-content: space-between
-            // align-items: center
-            // height: 40vh
+            +box-flex(row, space-around)
+            // height: 10vh
+            list-style: none
             li
-                display: flex
-                justify-content: center
-                align-items: center
-                list-style-type: none
-                flex-basis: 20%
-                // height: 20vh
-                background-color: blue
-                a
+                width: 20%
+                // height: 10vh
+                background-color: black
+                a   
+                    display: block
                     text-decoration: none
+                    padding: 15px
+                    text-align: center
+                    line-height: 50px
                     color: $font-color
                     font-size: 20px
                     text-transform: uppercase
                     font-family: arial
+                    &:hover
+                        background-color: red
