@@ -27,7 +27,7 @@ console.log(window);
 console.log(document.body);
 console.log(document.documentElement);
 
-// skrót do kolekcji zbioru wszystkich obr  azków na stroneie
+// skrót do kolekcji zbioru wszystkich obrazków na stroneie
 console.log(document.images);
 console.log(document.querySelectorAll("img"));
 // czego używać najczęściej

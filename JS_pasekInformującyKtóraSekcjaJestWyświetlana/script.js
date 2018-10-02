@@ -11,15 +11,15 @@ function changeText() {
   const wysokoscSekcji4 = document.querySelector(".sekcja4").clientHeight;
   //   console.log(wysokoscSekcji2);
 
-  // const odleglocsOdPoczatkuSekcji1 = document.querySelector(".sekcja1")
-  //   .offsetTop;
-  // const odleglocsOdPoczatkuSekcji2 = document.querySelector(".sekcja2")
-  //   .offsetTop;
-  // const odleglocsOdPoczatkuSekcji3 = document.querySelector(".sekcja3")
-  //   .offsetTop;
-  // const odleglocsOdPoczatkuSekcji4 = document.querySelector(".sekcja4")
-  //   .offsetTop;
-  //   console.log(odleglocsOdPoczatkuSekcji1);
+  const odleglocsOdPoczatkuSekcji1 = document.querySelector(".sekcja1")
+    .offsetTop;
+  const odleglocsOdPoczatkuSekcji2 = document.querySelector(".sekcja2")
+    .offsetTop;
+  const odleglocsOdPoczatkuSekcji3 = document.querySelector(".sekcja3")
+    .offsetTop;
+  const odleglocsOdPoczatkuSekcji4 = document.querySelector(".sekcja4")
+    .offsetTop;
+  // console.log(odleglocsOdPoczatkuSekcji1);
 
   if (wielkoscSrola < wysokoscSekcji1) {
     txt.textContent = "sekcja 1";

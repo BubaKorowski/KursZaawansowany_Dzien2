@@ -1,16 +1,16 @@
 console.log("script OK");
 
-// var body = document.querySelector("body");
+var body = document.querySelector("body");
 // var body = document.body;
-// let counter = 0;
-// body.addEventListener("click", function() {
-//   counter = counter + 1;
-//   console.log("klik");
-// });
-// let clickResult = document.querySelector("span");
-// document.addEventListener("click", function() {
-//   clickResult.textContent = counter;
-// });
+let counter = 0;
+body.addEventListener("click", function() {
+  counter = counter + 1;
+  console.log("klik");
+});
+let clickResult = document.querySelector("span");
+document.addEventListener("click", function() {
+  clickResult.textContent = counter;
+});
 
 // dodawanie i odejmowanie
 
